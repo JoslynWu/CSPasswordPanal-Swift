@@ -1,14 +1,12 @@
 # CSPasswordPanal-Swift
 一个优美而方便的密码验证面板。有忘记密码功能。可配置密码位数，已经做好屏幕适配。
+本版本为[Swift版](https://github.com/JoslynWu/CSPasswordPanal-Swift.git)。
+
+## Objective-C版入口：[CSPasswordPanal-OC](https://github.com/JoslynWu/CSPasswordPanal.git)
 
 ## 效果图
 ![](/Screenshot/CSPasswordPanal.png)
 
-## 相关链接
-
-[CSPasswordPanal首页](https://github.com/JoslynWu/CSPasswordPanal.git)
-[CSPasswordPanal-OC](https://github.com/JoslynWu/CSPasswordPanal-OC.git)
-[CSPasswordPanal-Swift](https://github.com/JoslynWu/CSPasswordPanal-Swift.git)
 
 ## 怎么接入
 直接将下面文件（在CSPasswordPanal文件夹中）添加（拖入）项目中
@@ -27,7 +25,7 @@ tatic func showPwdPanal(entryVC: UIViewController, config:((CSPwdPanalViewContro
 **Example:**
 
 ```
-默认配置：
+使用默认配置：
 CSPwdPanalViewController.showPwdPanal(entryVC: self, confirmComplete: { (pwd) in
 	print("--->" +  pwd)
 }, forgetPwd: {
@@ -48,10 +46,10 @@ CSPwdPanalViewController.showPwdPanal(entryVC: self, config: {
 ## 哪些属性可配置
 
 ```
-var panalTitle: String = "密码验证"
-var pwdNumCount: Int = 6
-var normolColor: UIColor = UIColor.cs_colorWithHexString(hex: "#909090")    // 提交按钮未激活时的颜色。默认#909090
-var activeColor: UIColor = UIColor.cs_colorWithHexString(hex: "12c286")     // 提交按钮激活时的颜色。默认#12c286
+panalTitle: String   // 面板标题。默认为"密码验证"。
+pwdNumCount: Int     // 密码位数。默认6位。
+normolColor: UIColor // 提交按钮未激活时的颜色。默认#909090
+activeColor: UIColor // 提交按钮激活时的颜色。默认#12c286
 ```
 
 ## 怎么Clone
