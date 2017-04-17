@@ -12,28 +12,28 @@
 直接将下面文件（在CSPasswordPanal文件夹中）添加（拖入）项目中
 
 ```
-CSPwdPanalViewController.swift
+CSPasswordPanal.swift
 ```
 
 ## 怎么用
 调用一个类方法即可
 
 ```
-tatic func showPwdPanal(entryVC: UIViewController, config:((CSPwdPanalViewController) -> Void)? = nil, confirmComplete: @escaping ((String) -> Void), forgetPwd: @escaping (() -> Void));
+static func showPwdPanal(entryVC: UIViewController, config:((CSPasswordPanal) -> Void)? = nil, confirmComplete: @escaping ((String) -> Void), forgetPwd: @escaping (() -> Void));
 ```
 
 **Example:**
 
 ```
 使用默认配置：
-CSPwdPanalViewController.showPwdPanal(entryVC: self, confirmComplete: { (pwd) in
+CSPasswordPanal.showPwdPanal(entryVC: self, confirmComplete: { (pwd) in
 	print("--->" +  pwd)
 }, forgetPwd: {
 	print("--->Do find back password logic.")
 })
  
 自定义配置：
-CSPwdPanalViewController.showPwdPanal(entryVC: self, config: {
+CSPasswordPanal.showPwdPanal(entryVC: self, config: {
     $0.normolColor = UIColor.lightGray
 }, confirmComplete: { (pwd) in
     print("--->" +  pwd)
