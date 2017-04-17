@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E18D7A91E9B61A6000D26F9 /* CSPwdPanalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18D7A81E9B61A6000D26F9 /* CSPwdPanalViewController.swift */; };
+		9E18D7A91E9B61A6000D26F9 /* CSPasswordPanal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18D7A81E9B61A6000D26F9 /* CSPasswordPanal.swift */; };
 		9EDCBA981E99E76F000EC094 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCBA971E99E76F000EC094 /* AppDelegate.swift */; };
 		9EDCBA9A1E99E76F000EC094 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCBA991E99E76F000EC094 /* ViewController.swift */; };
 		9EDCBA9F1E99E76F000EC094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EDCBA9E1E99E76F000EC094 /* Assets.xcassets */; };
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9E18D7A81E9B61A6000D26F9 /* CSPwdPanalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSPwdPanalViewController.swift; sourceTree = "<group>"; };
+		9E18D7A81E9B61A6000D26F9 /* CSPasswordPanal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSPasswordPanal.swift; sourceTree = "<group>"; };
 		9EDCBA941E99E76F000EC094 /* CSPasswordPanalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSPasswordPanalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDCBA971E99E76F000EC094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EDCBA991E99E76F000EC094 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		9EDCBAAF1E99EF89000EC094 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				9E18D7A81E9B61A6000D26F9 /* CSPwdPanalViewController.swift */,
+				9E18D7A81E9B61A6000D26F9 /* CSPasswordPanal.swift */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -148,7 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E18D7A91E9B61A6000D26F9 /* CSPwdPanalViewController.swift in Sources */,
+				9E18D7A91E9B61A6000D26F9 /* CSPasswordPanal.swift in Sources */,
 				9EDCBA9A1E99E76F000EC094 /* ViewController.swift in Sources */,
 				9EDCBA981E99E76F000EC094 /* AppDelegate.swift in Sources */,
 			);

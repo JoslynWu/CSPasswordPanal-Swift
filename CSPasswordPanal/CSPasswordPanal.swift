@@ -1,5 +1,5 @@
 //
-//  CSPwdPanalViewController.swift
+//  CSPasswordPanal.swift
 //  CSPasswordPanalDemo
 //
 //  Copyright © 2017 joslyn. All rights reserved.
@@ -13,7 +13,7 @@ private let passwordPanalMaxY: CGFloat = 391
 private let pwdTextField_w: CGFloat = 238
 private let pwdTextField_h: CGFloat = 44
 
-class CSPwdPanalViewController: UIViewController {
+class CSPasswordPanal: UIViewController {
     
     
     // MARK: - ------------------public-------------------
@@ -25,8 +25,8 @@ class CSPwdPanalViewController: UIViewController {
     ///   - config: 用来配置password面板实例的属性
     ///   - confirmComplete: 确认密码时的回调
     ///   - forgetPwd: 忘记密码的回调
-    static func showPwdPanal(entryVC: UIViewController, config:((CSPwdPanalViewController) -> Void)? = nil, confirmComplete: @escaping ((String) -> Void), forgetPwd: @escaping (() -> Void)) {
-        let panal = CSPwdPanalViewController()
+    static func showPwdPanal(entryVC: UIViewController, config:((CSPasswordPanal) -> Void)? = nil, confirmComplete: @escaping ((String) -> Void), forgetPwd: @escaping (() -> Void)) {
+        let panal = CSPasswordPanal()
         panal.modalPresentationStyle = .overCurrentContext
         panal.confirmClosure = confirmComplete
         panal.forgetClosure = forgetPwd

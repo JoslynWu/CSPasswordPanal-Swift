@@ -19,20 +19,20 @@ class ViewController: UIViewController {
     @IBAction func passwordPanalBtnDidClick(_ sender: UIButton) {
         
         // 默认配置
-        CSPwdPanalViewController.showPwdPanal(entryVC: self, confirmComplete: { (pwd) in
+        CSPasswordPanal.showPwdPanal(entryVC: self, confirmComplete: { (pwd) in
             print("--->" +  pwd)
         }, forgetPwd: {
             print("--->Do find back password logic.")
         })
         
         // 自定义配置
-        CSPwdPanalViewController.showPwdPanal(entryVC: self, config: {
-            $0.normolColor = UIColor.lightGray
-        }, confirmComplete: { (pwd) in
-            print("--->" +  pwd)
-        }, forgetPwd: {
-            print("--->Do find back password logic.")
-        })
+//        CSPasswordPanal.showPwdPanal(entryVC: self, config: {
+//            $0.normolColor = UIColor.lightGray
+//        }, confirmComplete: { (pwd) in
+//            print("--->" +  pwd)
+//        }, forgetPwd: {
+//            print("--->Do find back password logic.")
+//        })
         
 
     }
