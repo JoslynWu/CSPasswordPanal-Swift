@@ -232,7 +232,7 @@ class CSPasswordPanal: UIViewController {
                 let pwdView = pwdViews[index]
                 pwdView.removeFromSuperview()
                 pwdViews.removeLast()
-                pwdString = (pwdString as NSString).substring(to: pwdString.characters.count - 1)
+                pwdString = (pwdString as NSString).substring(to: pwdString.count - 1)
             }
         } else {
             if self.pwdViews.count < self.pwdNumCount {
